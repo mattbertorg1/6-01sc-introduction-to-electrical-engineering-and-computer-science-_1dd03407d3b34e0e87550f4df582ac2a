@@ -1,0 +1,49 @@
+---
+course_id: 6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011
+layout: course_section
+parent_title: Software and Tools
+title: Installing the 6.01 Software on GNU/Linux
+type: course
+uid: f1bdaacf7071557904daa1ee567058ad
+
+---
+
+« [Previous]({{< baseurl >}}/sections/software-and-tools)
+
+This course makes use of Athena, MIT's UNIX-based computing environment. OCW does not provide access to this environment.
+
+The laptops in the lab use Athena software that is built on [Ubuntu](http://www.ubuntu.com/) version 10.4. We expect the 6.01 software to work on other distributions, but other distributions have not been tested.
+
+A. Get Python, TK, and Numpy
+----------------------------
+
+Make sure that your machine is running Python 2.6.6. You can use either your distribution's package manager (apt, synaptic, yum, etc.) to download and install the python package (make sure it's version 2.6.6), or you can compile Python from [source](http://www.python.org/download/releases/2.6.6/).
+
+You should also install tkinter, a Python package that is necessary for running soar. Installation will be dependent on your distribution. For recent Debian-based distros, there is a package (python-tk) that you can install with apt. On other distributions, you should be able to find an appropriate package to install as well.
+
+You will also need to install numpy, a Python package, for some of the assignments. Again, installation will be dependent on your distribution. For recent Debian-based distros, there is a package (python-numpy) that you can install with apt. For other distributions, you can either compile from [source](http://sourceforge.net/projects/numpy/files/) or find the appropriate package for your distribution.
+
+B. Get Idle or Emacs
+--------------------
+
+You'll also need Idle or Emacs (and it won't hurt to have both). If your Python distribution did not come with Idle (type "idle" at a command line to see if it's defined), there's a package (idle) that you can install with apt. Since you'll be starting Idle a lot, you'll find it convenient to create a launcher for and place it in a menu or on the menu bar.
+
+C. Get 6.01 Software
+--------------------
+
+Download the [6.01 modules](/coursemedia/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/afbbebccae39bfa42f9d071e9ed10453_lib601-3-500.tar.gz) to a convenient directory (e.g., ~/Desktop). Open a terminal window, navigate to the Desktop directory by typing a command of the form
+
+\> cd ~/Desktop
+
+Then unpack the modules by typing
+
+\> tar xvzf lib601-3-500.tar.gz
+
+Then change directories and do the installation with
+
+\> cd lib601-3-500  
+\> sudo python setup.py install
+
+You can now delete all of the files created by this operation (i.e., ~/Desktop/lib601-3-500.tar.gz and its associated directory tree). You should now be able to use the lib601 files from Python and to run soar by typing soar at a terminal command prompt.
+
+« [Previous]({{< baseurl >}}/sections/software-and-tools)
